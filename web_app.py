@@ -20,6 +20,7 @@ for index, todo in enumerate(todos):
         read_write_.write_todos(todos)
         del st.session_state[todo]
         st.rerun()
+
 st.text_input(label="", placeholder="Enter a todo here...",
               on_change=add_todo, key="new_todo")
 
